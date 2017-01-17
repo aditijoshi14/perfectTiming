@@ -1,0 +1,73 @@
+<!-- 
+This is a html file for perfect timing project
+
+@author Aditi Joshi
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<h1> ENTER TIME IN SECONDS </h1>
+	<input type="number" name="Time" id="time" placeholder="0000">
+	<input type="submit" value="Submit" onclick="initFunction()">
+
+	<div class="row">
+		<div class="col-md-6">
+			<h2> Countdown Clock</h2>
+			<div>
+				<span id="countdown_days">0</span>
+				<div class="text">Days</div>
+			</div>
+			<div>
+				<span id="countdown_hours">0</span>
+				<div class="text">Hours</div>
+			</div>
+			<div>
+				<span id="countdown_minutes">0</span>
+				<div class="text">Minutes</div>
+			</div>
+			<div>
+				<span id="countdown_seconds">0</span>
+				<div class="text">Seconds</div>
+			</div>
+			<ul>
+				<li><button id="countdown_button_startAndPause" disabled><img src="start_100.png" onclick="countdown_startPause()" id="countdown_startAndPause"></button></li>
+				<li><button id="countdown_button_reset" disabled><img src="reset_100.png" onclick="countdown_reset()"></button></li>
+			</ul>
+		</div>
+
+		<div class="col-md-6">
+		<h2> Count Up Clock </h2>
+			<div>
+				<span id="countup_days">0</span>
+				<div class="text">Days</div>
+			</div>
+			<div>
+				<span id="countup_hours">0</span>
+				<div class="text">Hours</div>
+			</div>
+			<div>
+				<span id="countup_minutes">0</span>
+				<div class="text">Minutes</div>
+			</div>
+			<div>
+				<span id="countup_seconds">0</span>
+				<div class="text">Seconds</div>
+			</div>
+		</div>
+
+		<ul>
+			<li><button id="countup_button_startAndPause" disabled><img src="start_100.png" onclick="countup_startPause()" id="countup_startAndPause"></button></li>
+			<li><button id="countup_button_reset" disabled><img src="reset_100.png" onclick="countup_reset()"></button></li>
+		</ul>
+	</div>
+
+</body>
+</html>
