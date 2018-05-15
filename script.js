@@ -24,8 +24,8 @@ function initFunction(){
 	countdownTime = userTime;
 	countupTime = 0;
 
-	document.getElementById("countdown_startAndPause").src = "pause_100.png";
-	document.getElementById("countup_startAndPause").src = "pause_100.png";
+	document.getElementById("countdown_startAndPause").src = "img/pause_100.png";
+	document.getElementById("countup_startAndPause").src = "img/pause_100.png";
 
 	document.getElementById("countdown_button_startAndPause").disabled = false; // startAndPause button for countdown clock is enabled 
 	document.getElementById("countdown_button_reset").disabled = false; // reset button for countdown clock is enabled 
@@ -112,12 +112,12 @@ function countup_reset(){
 */
 function countdown_startPause(){
 	if(document.getElementById("countdown_button_startAndPause").disabled == false){
-		if(document.getElementById("countdown_startAndPause").src.indexOf("start_100.png") >= 0){
-			document.getElementById("countdown_startAndPause").src = "pause_100.png";
+		if(document.getElementById("countdown_startAndPause").src.indexOf("img/start_100.png") >= 0){
+			document.getElementById("countdown_startAndPause").src = "img/pause_100.png";
 			countdown_clock = setInterval("countdown_updateTime()", 1000);
 
 		}else{
-			document.getElementById("countdown_startAndPause").src = "start_100.png";
+			document.getElementById("countdown_startAndPause").src = "img/start_100.png";
 			clearInterval(countdown_clock);
 		}
 	}else{
@@ -131,12 +131,12 @@ function countdown_startPause(){
 */
 function countup_startPause(){
 	if(document.getElementById("countup_button_startAndPause").disabled == false){
-		if(document.getElementById("countup_startAndPause").src.indexOf("start_100.png") >= 0){
-			document.getElementById("countup_startAndPause").src = "pause_100.png";
+		if(document.getElementById("countup_startAndPause").src.indexOf("img/start_100.png") >= 0){
+			document.getElementById("countup_startAndPause").src = "img/pause_100.png";
 			countup_clock = setInterval("countup_updateTime()", 1000);
 
 		}else{
-			document.getElementById("countup_startAndPause").src = "start_100.png";
+			document.getElementById("countup_startAndPause").src = "img/start_100.png";
 			clearInterval(countup_clock);
 		}
 	}else{
@@ -155,7 +155,7 @@ function countdown_updateTime(){
 	}else{
 		clearInterval(countdown_clock);
 		document.getElementById("countdown_button_startAndPause").disabled = true;
-		document.getElementById("countdown_startAndPause").src = "start_100.png";
+		document.getElementById("countdown_startAndPause").src = "img/start_100.png";
 	}
 }
 
@@ -170,6 +170,6 @@ function countup_updateTime(){
 	}else{
 		clearInterval(countup_clock);
 		document.getElementById("countup_button_startAndPause").disabled = true;
-		document.getElementById("countup_startAndPause").src = "start_100.png";
+		document.getElementById("countup_startAndPause").src = "img/start_100.png";
 	}
 }
